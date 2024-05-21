@@ -13,3 +13,6 @@
 
 [GIT und GitHub](https://www.msxfaq.de/code/git_und_github.htm#)
 
+### Qt
+[KDAB](https://www.kdab.com/)
+
