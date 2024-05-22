@@ -3,6 +3,7 @@
 #include <QAbstractListModel>
 #include <QApplication>
 #include <QListView>
+#include <QTimer>
 
 // #include <QAbstractItemModelTester>
 
@@ -34,12 +35,37 @@ public:
 
         switch (role) {
         case Qt::DisplayRole:
+        case Qt::EditRole:
             return result;
         case Qt::DecorationRole:
             return QVariant::fromValue(QColor(result));
         }
 
         return QVariant();
+    }
+
+    bool setData(const QModelIndex &index, const QVariant &value, int role) override
+    {
+        if (role != Qt::EditRole)
+            return false;
+
+        const int row = index.row();
+        list[row] = value.toString();
+        emit dataChanged(index, index);
+        return true;
+    }
+
+    Qt::ItemFlags flags(const QModelIndex &index) const override
+    {
+        return QAbstractListModel::flags(index) | Qt::ItemIsEditable;
+    }
+
+public slots:
+    void addRow()
+    {
+        beginInsertRows(QModelIndex(), 0, 0);
+        list.insert(0, "A New Row");
+        endInsertRows();
     }
 
 private:
@@ -53,6 +79,10 @@ int main(int argc, char *argv[])
 
     ListModel listModel;
     // QAbstractItemModelTester tester(&listModel);
+
+    // QTimer timer;
+    // timer.start(5000);
+    // QObject::connect(&timer, &QTimer::timeout, &listModel, &ListModel::addRow);
 
     QListView listView;
     listView.setModel(&listModel);
