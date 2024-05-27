@@ -8,6 +8,8 @@
 
 [Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
 
+[Cheat Sheets & Infographics](https://hackingcpp.com/cpp/cheat_sheets.html)
+
 ### Git
 [Markdown Live Preview](https://markdownlivepreview.com/)
 
