@@ -10,6 +10,8 @@
 
 [Cheat Sheets & Infographics](https://hackingcpp.com/cpp/cheat_sheets.html)
 
+[A Collection Of Various C++ Learning Resources](https://hackingcpp.com/)
+
 ### Git
 [Markdown Live Preview](https://markdownlivepreview.com/)
 
