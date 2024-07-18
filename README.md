@@ -7,6 +7,8 @@
 [Windows Development Environment](https://learn.microsoft.com/en-us/windows/dev-environment/)
 
 ### C++ Online
+[Working Draft Programming Languages — C++](https://timsong-cpp.github.io/cppwp/)
+
 [Compiler Explorer](https://godbolt.org/)
 
 [Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
