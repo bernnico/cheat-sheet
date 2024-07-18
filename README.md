@@ -25,3 +25,6 @@
 ### Qt
 [KDAB](https://www.kdab.com/)
 
+### Science
+[Electropedia: The World's Online Electrotechnical Vocabulary](https://www.electropedia.org/)
+
