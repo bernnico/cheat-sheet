@@ -1,0 +1,21 @@
+
+Kamera:           Nikon D800
+Objektiv:         Micro-NIKKOR 55mm 1:28
+
+Brennweite:       55mm
+Auflösung:        (FX, S) 3680x2456
+Bildsensor:       35.9 x 24.0 mm
+Format:           TIFF
+
+Belichtungszeit:  10s
+Blende:           f/5.6
+ISO:              800
+Zoom:             max.
+
+1. Bild:           15.09.2023 01:58
+Timer:
+  Vorlaufzeit:     5s
+  Anzahl:          9s
+  Interval:        3s
+  
+Interval zw. jedem 9. und dem nächsten Bild ca. 10-20s (exklusiv Vorlaufzeit)
