@@ -43,7 +43,7 @@ LIBS += -L$${OPENCV_LIB_DIR} \
 message($${TARGET})
 message("INCLUDEPATH: "$${INCLUDEPATH})
 message("LIBS:        "$${LIBS})
-message("")
+message(" ")
 
 HEADERS +=
 

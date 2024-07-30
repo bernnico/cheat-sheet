@@ -10,12 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     MyTestClass.cpp \
+    ShapePainter.cpp \
     ToggleWidget.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     MyTestClass.h \
+    ShapePainter.h \
     ToggleWidget.h \
     mainwindow.h
 
