@@ -17,6 +17,8 @@
 
 [A Collection Of Various C++ Learning Resources](https://hackingcpp.com/)
 
+[Algorithm Challenge](https://leetcode.com/problems/two-sum/description/)
+
 ### Git
 [Markdown Live Preview](https://markdownlivepreview.com/)
 
