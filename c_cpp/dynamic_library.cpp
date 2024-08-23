@@ -22,14 +22,17 @@ std::string getLibraryName(const std::string& fileName) {
     std::string postfix;
 
     #if defined(OS_WINDOWS)
-        prefix = "lib";
-        postfix = ".dll";
+        // TODO
+        // MSVC or MinGW-W64 ???
+        prefix = "lib";     // or "" ???
+        postfix = ".dll";   // static lib => .lib
+        // import library => .dll.a
     #elif defined(OS_LINUX)
         prefix = "lib";
-        postfix = ".so";
+        postfix = ".so";    // static lib => .a
     #elif defined(OS_MAC)
         prefix = "lib";
-        postfix = ".dylib";
+        postfix = ".dylib"; // static lib => .a
     #endif
 
     // You can add specific handling for different compilers if needed
