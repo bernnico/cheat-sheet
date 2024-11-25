@@ -1,6 +1,10 @@
 ## Wichtige GCC-Warnungen für C++17
 
 Diese Liste enthält einige der wichtigsten GCC-Warnungen, die oft auf potenziell problematisches Verhalten hinweisen. Viele dieser Warnungen können durch das Flag `-Werror` (oder einzeln z.B. `-Werror=narrowing`) in Fehler umgewandelt werden, um die strikte Einhaltung der C++17-Standards zu gewährleisten. Um **die meisten Warnungen zu aktivieren**, kannst du das Flag `-Wall -Wextra` verwenden. Beachte, dass einige zusätzliche Warnungen (z. B. `-Wconversion`) möglicherweise explizit hinzugefügt werden müssen.
+
+### 0. `-pedantic`
+   - **Beschreibung**: Aktiviert strenge Standardkonformitätsprüfungen und warnt vor nicht standardkonformen Erweiterungen, die GCC erlaubt. Diese Option stellt sicher, dass der Code so nah wie möglich am C++-Standard bleibt.
+
 ### 1. `-Wnarrowing`
    - **Beschreibung**: Warnt bei einer Verengung (Narrowing Conversion), wenn ein Wert in einen kleineren oder inkompatiblen Typ konvertiert wird, z. B. `double` zu `float` oder `int` zu `short`.
    - **Beispiel**: `float f = {3.14159};` (führt zu einer Verengung, weil `3.14159` ein `double` ist).
@@ -82,6 +86,16 @@ Diese Liste enthält einige der wichtigsten GCC-Warnungen, die oft auf potenziel
    - **Beispiel**:
      ```cpp
      int x = (int)3.5;  // alte C-Style-Cast-Syntax
+     ```
+     
+### 13. `-Wvla`
+   - **Beschreibung**: Warnt, wenn variable-length arrays (VLAs) verwendet werden, die in C++ nicht standardkonform sind, aber von GCC als Erweiterung unterstützt werden.
+   - **Beispiel**:
+     ```cpp
+     size_t foo(size_t size) {
+         int arr[size];
+         return sizeof(arr);
+     }
      ```
 
 ---
