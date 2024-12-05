@@ -7,19 +7,37 @@ Diese Liste enthält einige der wichtigsten GCC-Warnungen, die oft auf potenziel
 
 ### 1. `-Wnarrowing`
    - **Beschreibung**: Warnt bei einer Verengung (Narrowing Conversion), wenn ein Wert in einen kleineren oder inkompatiblen Typ konvertiert wird, z. B. `double` zu `float` oder `int` zu `short`.
-   - **Beispiel**: `float f = {3.14159};` (führt zu einer Verengung, weil `3.14159` ein `double` ist).
+   - **Beispiel**:
+     ```cpp
+     float f = {3.14159}; // führt zu einer Verengung, weil `3.14159` ein `double` ist
+     ```
 
 ### 2. `-Wreturn-type`
    - **Beschreibung**: Warnt, wenn eine Funktion, die einen Rückgabewert erwartet, keinen `return`-Wert besitzt. In C++ ist dies undefiniertes Verhalten, wenn die Funktion aufgerufen wird.
-   - **Beispiel**: `int foo() {}` (keine `return`-Anweisung in einer Funktion, die `int` zurückgeben soll).
+   - **Beispiel**:
+     ```cpp
+     int foo() {
+         // keine `return`-Anweisung in einer Funktion, die `int` zurückgeben soll
+     } 
+     ```
 
 ### 3. `-Wunused-variable`
    - **Beschreibung**: Warnt, wenn eine Variable deklariert, aber nicht verwendet wird.
-   - **Beispiel**: `int x = 42;` in einer Funktion ohne Verwendungszweck.
+   - **Beispiel**:
+     ```cpp
+     int x = 42; // in einer Funktion ohne Verwendungszweck.
+     ```
 
 ### 4. `-Wsign-compare`
    - **Beschreibung**: Warnt bei Vergleichen zwischen signed und unsigned Werten, was zu unerwartetem Verhalten führen kann, wenn der signed-Wert negativ ist.
-   - **Beispiel**: `int x = -1; unsigned int y = 0; if (x < y) {}` (führt zu unerwartetem Verhalten, da `x` in `unsigned` konvertiert wird).
+   - **Beispiel**:
+     ```cpp
+     int x = -1;
+     unsigned int y = 0;
+     if (x < y) { 
+         // führt zu unerwartetem Verhalten, da `x` in `unsigned` konvertiert wird
+     }
+     ```
 
 ### 5. `-Wshadow`
    - **Beschreibung**: Warnt, wenn eine lokale Variable einen Namen hat, der eine Variable im äußeren Scope überschattet. Dies kann zu Verwirrung und Fehlern führen.
@@ -33,7 +51,11 @@ Diese Liste enthält einige der wichtigsten GCC-Warnungen, die oft auf potenziel
 
 ### 6. `-Wconversion`
    - **Beschreibung**: Warnt bei impliziten Konvertierungen, die zu einem Verlust von Informationen oder einem unerwarteten Verhalten führen könnten, wie z. B. bei der Konvertierung von `int` zu `float`.
-   - **Beispiel**: `int x = 1000; short y = x;` (könnte zu einem Datenverlust führen, wenn `x` zu groß ist).
+   - **Beispiel**:
+     ```cpp
+     int x = 1000;
+     short y = x; // könnte zu einem Datenverlust führen, wenn `x` zu groß ist
+     ```
 
 ### 7. `-Wreorder`
    - **Beschreibung**: Warnt, wenn die Reihenfolge der Initialisierung in der Initialisierungsliste eines Konstruktors nicht der Deklarationsreihenfolge der Member-Variablen entspricht.
