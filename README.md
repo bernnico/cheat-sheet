@@ -13,7 +13,7 @@
 
 [Compiler Insight](https://cppinsights.io/)
 
-[Online Compiler](https://www.onlinegdb.com/online_c++_compiler)
+[Compiler Online](https://www.onlinegdb.com/online_c++_compiler)
 
 [Cheat Sheets & Infographics](https://hackingcpp.com/cpp/cheat_sheets.html)
 
