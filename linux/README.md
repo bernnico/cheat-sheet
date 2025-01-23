@@ -1,3 +1,14 @@
+### Offizielle Dokumentation und Standards
+
+Die meisten Linux-Distributionen folgen Standards wie der Linux Standard Base (LSB) oder POSIX. Diese Standards dokumentieren die wichtigsten Dateien und Befehle.
+
+- **LSB-Dokumentation**: [https://refspecs.linuxfoundation.org/](https://refspecs.linuxfoundation.org/)
+- **Linux From Scratch** (für tiefes Verständnis): [https://www.linuxfromscratch.org/](https://www.linuxfromscratch.org/)
+
+
+
+# TODO
+
 ### Zusammenfassung der wichtigsten Parameter:
 
 | Parameter | Beschreibung |
