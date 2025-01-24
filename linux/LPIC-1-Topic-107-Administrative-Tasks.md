@@ -1,4 +1,7 @@
-## LPIC-1 Topic 107: Administrative Tasks
+## 107.1 Manage user and group accounts and related system files
+
+
+### LPIC-1 Topic 107: Administrative Tasks
 
 ### /etc/passwd
 ``
@@ -82,3 +85,6 @@ usermod -aG sudo john            # Benutzer zu einer Gruppe hinzufügen
 usermod -d /new/home john        # Heimatverzeichnis ändern
 usermod -l newname oldname       # Benutzernamen ändern
 ```
+
+
+### 107.2 Automate system administration tasks by scheduling jobs
