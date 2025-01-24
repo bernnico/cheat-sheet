@@ -42,4 +42,43 @@ Abfrage von Systemdatenbanken wie `passwd`, `shadow`, `group`, `hosts` und `serv
 
 ``getent database [key]``
 
-### TODO
+### groupadd
+```bash
+groupadd developers
+```
+
+### groupdel
+```bash
+groupdel developers
+```
+
+### groupmod
+```bash
+groupmod -n newgroupname oldgroupname
+```
+
+### passwd
+```bash
+passwd john      # Passwort ändern
+passwd -l john   # Konto sperren
+passwd -u john   # Konto entsperren
+```
+
+### useradd
+```bash
+useradd -m john                     # Benutzer mit Heimatverzeichnis erstellen
+useradd -m -G sudo,developers john  # Benutzer und Gruppen hinzufügen
+```
+
+### userdel
+```bash
+userdel john         # Benutzer löschen
+userdel -r john      # Benutzer inkl. Heimatverzeichnis löschen
+```
+
+### usermod
+```bash
+usermod -aG sudo john            # Benutzer zu einer Gruppe hinzufügen
+usermod -d /new/home john        # Heimatverzeichnis ändern
+usermod -l newname oldname       # Benutzernamen ändern
+```
