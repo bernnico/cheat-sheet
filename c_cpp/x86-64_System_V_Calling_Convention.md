@@ -39,6 +39,8 @@
 </tr>
 </table>
 
+---
+
 ## 2. Rückgabewert-Register
 | **Rückgabewert-Typ** | **Register** |
 |-----------------|----------------|
@@ -48,9 +50,13 @@
 | `struct` ≤ 16 Byte (2 `longs`) | `rax`, `rdx` |
 | `struct` > 16 Byte | Speicher (Zeiger in `rdi`) |
 
+---
+
 ## 3. Stack-Alignment & Red Zone
 - **Stack muss 16-Byte aligned sein** (vor `call` muss `rsp % 16 == 0` sein).
 - **Red Zone**: Die unteren **128 Bytes unter `rsp`** können **ohne `push`/`pop` genutzt werden** (nicht in Windows!).
+
+---
 
 ## 4. Beispiel: Integer- und Floating-Point-Argumente
 ```cpp
@@ -73,6 +79,8 @@ func:
     ret
 ```
 
+---
+
 ## 5. Vergleich: System V ABI vs. Windows x64 ABI
 | **Feature** | **System V ABI (Linux/macOS)** | **Windows x64 ABI** |
 |-------------|----------------|---------------|
@@ -81,4 +89,4 @@ func:
 | Stack-Alignment | **16-Byte aligned** | **32-Byte aligned** |
 | Red Zone (128B unter `rsp`) | ✅ **Ja** | ❌ **Nein** |
 
-
+---
