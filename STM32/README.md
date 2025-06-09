@@ -74,6 +74,6 @@ theta = \text{atan2}(m_y \cos(\phi) - m_z \sin(\phi), \dots)
 | Filters        | Own (Madgwick, Mahony, Kalman)   |
 
 ---
-
-This overview helps plan sensor usage and software architecture using STM32 and CMSIS-DSP.
+### 6. References
+[Cortex-M4 Technical Reference Manual r0p0](https://developer.arm.com/documentation/ddi0439/b)
 
