@@ -75,9 +75,7 @@ theta = \text{atan2}(m_y \cos(\phi) - m_z \sin(\phi), \dots)
 
 ---
 ### 6. References
-<!--
+
 [Cortex-M4 Technical Reference Manual r0p0](https://developer.arm.com/documentation/ddi0439/b) 
--->
-<a href="https://developer.arm.com/documentation/ddi0439/b" target="_blank">Cortex-M4 Technical Reference Manual r0p0</a>
 
 
